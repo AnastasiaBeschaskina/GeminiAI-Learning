@@ -1,0 +1,44 @@
+/* StoriesList.module.css */
+.storiesContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.storyCard {
+  cursor: pointer;
+  overflow: hidden;
+  flex: 1 1 calc(33.33% - 20px);
+  min-width: 150px;
+  max-width: calc(33.33% - 20px);
+  height: auto;
+  box-sizing: border-box;
+}
+
+.storyTitle {
+  text-align: center;
+  display: block;
+  text-wrap: wrap;
+}
+
+.disabledImage {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .storiesContainer {
+    width: 100%;
+  }
+
+  .storyCard {
+    cursor: pointer;
+    overflow: hidden;
+    width: 30%;
+  }
+}
